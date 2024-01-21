@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+</head>
+<style>
+    body{
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 130px repeat(6,80px);
+    }
+.mon-span {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    /* margin-left: 50px; */
+    background-color: #cad5e2;
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+    
+}
+.tue-span ,.thu-span , .sat-span1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    
+    background-color: #cad5e2;
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+    padding-bottom: 30px;
+    /* padding-top: 10px; */
+    margin-bottom: 10px;
+}
+.wed-span, .sat-span2{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    
+    background-color:#1faa59 ;
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+
+}
+.fri-span{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    background-color: #cad5e2;
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+
+}
+h1{
+    text-align: center;
+}
+.blue{
+    
+    background-color: #5da3fa;
+    padding: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+
+}
+.time{
+    background-color: #ff6666;
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+    padding-left: 8px;
+}
+h5 , h3 {
+   padding: 10px;
+
+    
+}
+.mon-day, .tue-day, .wed-day, .thu-day, .fri-day, .sat-day{
+    background-color: #8d3daf;
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+
+}
+.mon-y, .tue-y, .wed-y, .thu-y, .fri-y , .sat-y{
+    
+    background-color: #edc126;
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+    border-top: 0px;
+    border-bottom: 0px;
+    
+
+}
+.mon, .tue, .wed, .thu, .fri, .sat{
+    background-color: #03c6c7;
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+
+}
+
+</style>
+<body>
+    <h1>School Timetable</h1>
+    <div class="blue">
+        <div class="container">
+            <div class="time"><h3>TIME</h3></div>
+            <div class="time"><h3>08:00 AM - 09:00 AM</h3></div>
+            <div class="time"><h3>09:00 AM - 10:00 AM</h3></div>
+            <div class="time"><h3>10:00 AM - 11:00 AM</h3></div>
+            <div class="time"><h3>11:00 AM - 12:00 PM</h3></div>
+            <div class="time"><h3>12:00 PM - 02:00 PM</h3></div>
+            <div class="time"><h3>02:00 PM - 03:00 PM</h3></div>
+            <div class="time"><h3>03:00 PM - 04:00 PM</h3></div>
+            <div class="mon-day"><h3>Monday</h3></div>
+            <div class="mon"><h5>English</h5></div>
+            <div class="mon"><h5>Biology</h5></div>
+            <div class="mon"><h5>Physics</h5></div>
+            <div class="mon"><h5>Chemistry</h5></div>
+            <div class="mon-y"><h3>L</h3></div>
+            <div class="mon-span"><h5>Chemistry LAB</h5></div>
+            <div class="tue-day"><h3>Tuesday</h3></div>
+            <div class="tue-span"><h5>Biology LAB</h5></div>
+            <div class="tue"><h5>Physics</h5></div>
+            <div class="tue"><h5>Chemistry</h5></div>
+            <div class="tue-y"><h3>U</h3></div>
+            <div class="tue"><h5>English</h5></div>
+            <div class="tue"><h5>Biology</h5></div>
+            <div class="wed-day"><h3>Wednesday</h3></div>
+            <div class="wed"><h5>English</h5></div>
+            <div class="wed"><h5>Biology</h5></div>
+            <div class="wed"><h5>Physics</h5></div>
+            <div class="wed"><h5>Chemistry</h5></div>
+           <div class="wed-y"><h3>N</h3></div>
+            <div class="wed-span"><h3>Games</h3></div>
+            <div class="thu-day"><h3>Thursday</h3></div>
+            <div class="thu-span"><h5>Biology LAB</h5></div>
+            <div class="thu"><h5>Physics</h5></div>
+            <div class="thu"><h5>Chemistry</h5></div>
+            <div class="thu-y"><h3>C</h3></div>
+            <div class="thu"><h5>English</h5></div>
+            <div class="thu"><h5>Biology</h5></div>
+            <div class="fri-day"><h3>Friday</h3></div>
+            <div class="fri"><h5>English</h5></div>
+            <div class="fri"><h5>Biology</h5></div>
+            <div class="fri"><h5>Physics</h5></div>
+            <div class="fri"><h5>Chemistry</h5></div>
+            <div class="fri-y"><h3>H</h3></div>
+            <div class="fri-span"><h5>Physics Lab</h5></div>
+            <div class="sat-day"><h3>Saturday</h3></div>
+            <div class="sat-span1"><h5>Biology LAB</h5></div>
+            <div class="sat"><h5>Physics</h5></div>
+            <div class="sat"><h5>Chemistry</h5></div>
+            <div class="sat-y"><h3>Break</h3></div>
+            <div class="sat-span2"><h3>LET OFF</h3></div>
+            
+        </div>
+    </div>
+</body>
+</html>

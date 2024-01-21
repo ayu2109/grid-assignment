@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+</head>
+<style>
+    .main{
+        border-style: solid;
+        border-color: black;
+        border-width: 3px;
+        border-radius: 15px;
+    }
+    .photo{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        /* justify-content: space-around; */
+    }
+    .photo2{
+        grid-row-start:1 ;
+        grid-row-end: 3;
+    }
+    .photo4 , .photo6{
+        grid-row-start: 2;
+        grid-row-end: 4;
+
+    }
+    .photo1 {
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .photo3{
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .photo1, .photo2 , .photo3, .photo4 ,.photo5, .photo6{
+        border-radius: 15px;
+    }
+    .photo11, .photo13 ,.photo15{
+        height: 250px;
+        width: 250px;
+    }
+    .photo12, .photo14, .photo16{
+        width: 250px;
+        height: 519px;
+    }
+    .photo1, .photo4{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .photo2, .photo5{
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    .photo3, .photo6{
+        grid-column-start: 3;
+        grid-column-end: 3;
+    }
+    img{
+        border-radius: 20px;
+        margin: 10px;
+        /* padding: 20px; */
+    }
+    
+</style>
+<body>
+    <div class="main">
+        <div class="photo">
+            <div class="photo1"><img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="" class="photo11"></div>
+            <div class="photo2"><img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp" alt="" class="photo12"></div>
+            <div class="photo3"><img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp" alt="" class="photo13"></div>
+            <div class="photo4"><img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp" alt="" class="photo14"></div>
+            <div class="photo5"><img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="" class="photo15"></div>
+            <div class="photo6"><img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp" alt="" class="photo16"></div>
+        </div>
+    </div>
+</body>
+</html>
